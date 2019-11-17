@@ -1,0 +1,16 @@
+{
+  "name": "seal_generator",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc && webpack"
+  },
+  "dependencies": {
+    "@types/webpack": "^4.39.9",
+    "tsc": "^1.20150623.0",
+    "typescript": "^3.7.2",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
+  }
+}
