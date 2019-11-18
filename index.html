@@ -1,37 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-  </head>
-  <body>
-    <canvas id="canvas" height="800" width="800"></canvas>
-  </body>
-  <script>
-    var canvas = document.getElementById("canvas");
-    var cxt = canvas.getContext("2d");
-
-    var w = canvas.width;
-    var h = canvas.height;
-    var r1 = w / 2;
-    var r2 = r1 / 2;
-    var x1, x2, y1, y2;
-
-    cxt.translate(r1, r1);
-    cxt.beginPath();
-    for (var i = 0; i < 5; i++) {
-      x1 = r1 * Math.cos(((54 + i * 72) / 180) * Math.PI);
-      y1 = r1 * Math.sin(((54 + i * 72) / 180) * Math.PI);
-      x2 = r2 * Math.cos(((18 + i * 72) / 180) * Math.PI);
-      y2 = r2 * Math.sin(((18 + i * 72) / 180) * Math.PI);
-
-      cxt.lineTo(x2, y2);
-      cxt.lineTo(x1, y1);
-    }
-    cxt.closePath();
-
-    cxt.stroke();
-  </script>
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+    <img src="" alt="" id="img">
+</body>
 </html>
